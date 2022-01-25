@@ -1,0 +1,396 @@
+{
+  "paper": {
+    "name": "A4",
+    "leftMargin": 0.5,
+    "rightMargin": 0.5,
+    "topMargin": 0.5,
+    "bottomMargin": 0.5,
+    "isPortriat": true
+  },
+  "modelVersion": 2.01,
+  "defaultSchema": "Default",
+  "server": {
+    "objectType": "Server_CONCEPTUAL",
+    "name": "Default",
+    "schemas": [
+      {
+        "objectType": "Schema_CONCEPTUAL",
+        "name": "Default",
+        "tables": [
+          {
+            "objectType": "Table_CONCEPTUAL",
+            "name": "用户实体",
+            "oldName": "",
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_CONCEPTUAL",
+                "name": "fk_用户实体_病历实体_1",
+                "referencedSchema": "Default",
+                "referencedTable": "病历实体",
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_CONCEPTUAL",
+                "name": "fk_用户实体_药品实体_1",
+                "referencedSchema": "Default",
+                "referencedTable": "药品实体",
+                "sourceCardinality": "ManyRelationship",
+                "targetCardinality": "ManyRelationship",
+                "oldName": ""
+              }
+            ]
+          },
+          {
+            "objectType": "Table_CONCEPTUAL",
+            "name": "医生实体",
+            "oldName": "",
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_CONCEPTUAL",
+                "name": "fk_医生实体_用户实体_1",
+                "referencedSchema": "Default",
+                "referencedTable": "用户实体",
+                "sourceCardinality": "ManyRelationship",
+                "targetCardinality": "ManyRelationship",
+                "oldName": ""
+              }
+            ]
+          },
+          {
+            "objectType": "Table_CONCEPTUAL",
+            "name": "病历实体",
+            "oldName": "",
+            "foreignKeys": []
+          },
+          {
+            "objectType": "Table_CONCEPTUAL",
+            "name": "药品实体",
+            "oldName": "",
+            "foreignKeys": []
+          },
+          {
+            "objectType": "Table_CONCEPTUAL",
+            "name": "化验实体",
+            "oldName": "",
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_CONCEPTUAL",
+                "name": "fk_化验实体_用户实体_1",
+                "referencedSchema": "Default",
+                "referencedTable": "用户实体",
+                "sourceCardinality": "ManyRelationship",
+                "targetCardinality": "ManyRelationship",
+                "oldName": ""
+              }
+            ]
+          },
+          {
+            "objectType": "Table_CONCEPTUAL",
+            "name": "医护站实体",
+            "oldName": "",
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_CONCEPTUAL",
+                "name": "fk_医护站实体_医生实体_1",
+                "referencedSchema": "Default",
+                "referencedTable": "医生实体",
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "ManyRelationship",
+                "oldName": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "diagrams": [
+    {
+      "name": "Diagram 1",
+      "paperWidth": 1,
+      "paperHeight": 1,
+      "tableFont": "Arial Unicode MS",
+      "tableFontSize": 14,
+      "isBalckWhite": false,
+      "showDBSchemaName": false,
+      "showViewRelations": true,
+      "notation": "crowsfoot",
+      "showFieldComment": false,
+      "showTableComment": false,
+      "shapes": [
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "用户实体",
+          "x": 520,
+          "y": 190,
+          "width": 200,
+          "height": 100,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "医生实体",
+          "x": 270,
+          "y": 190,
+          "width": 200,
+          "height": 100,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "病历实体",
+          "x": 770,
+          "y": 190,
+          "width": 200,
+          "height": 100,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "药品实体",
+          "x": 520,
+          "y": 350,
+          "width": 200,
+          "height": 100,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "化验实体",
+          "x": 520,
+          "y": 30,
+          "width": 200,
+          "height": 100,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "医护站实体",
+          "x": 30,
+          "y": 190,
+          "width": 200,
+          "height": 100,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        }
+      ],
+      "layers": [],
+      "relations": [
+        {
+          "name": "fk_用户实体_病历实体_1",
+          "sourceTableName": "用户实体",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 735,
+              "y": 240
+            },
+            {
+              "x": 755,
+              "y": 240
+            }
+          ],
+          "label": {
+            "x": 731,
+            "y": 242,
+            "width": 158,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_用户实体_药品实体_1",
+          "sourceTableName": "用户实体",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 620,
+              "y": 305
+            },
+            {
+              "x": 620,
+              "y": 335
+            }
+          ],
+          "label": {
+            "x": 622,
+            "y": 255,
+            "width": 158,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_医生实体_用户实体_1",
+          "sourceTableName": "医生实体",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 485,
+              "y": 240
+            },
+            {
+              "x": 505,
+              "y": 240
+            }
+          ],
+          "label": {
+            "x": 317,
+            "y": 202,
+            "width": 158,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_化验实体_用户实体_1",
+          "sourceTableName": "化验实体",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 620,
+              "y": 145
+            },
+            {
+              "x": 620,
+              "y": 175
+            }
+          ],
+          "label": {
+            "x": 464,
+            "y": 95,
+            "width": 158,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_医护站实体_医生实体_1",
+          "sourceTableName": "医护站实体",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 245,
+              "y": 240
+            },
+            {
+              "x": 255,
+              "y": 240
+            }
+          ],
+          "label": {
+            "x": 241,
+            "y": 212,
+            "width": 172,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        }
+      ],
+      "viewRelations": []
+    }
+  ]
+}
