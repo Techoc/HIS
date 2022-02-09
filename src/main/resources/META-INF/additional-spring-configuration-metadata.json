@@ -1,0 +1,16 @@
+{
+  "properties": [
+    {
+      "name": "baidu.map.ak",
+      "type": "java.lang.String",
+      "description": "Description for baidu.map.ak.",
+      "defaultValue": "M5Z26KbY4becagikF51GPyZf0x0zlITw"
+    },
+    {
+      "name": "baidu.map.comprehension",
+      "type": "java.lang.Integer",
+      "description": "Description for baidu.map.comprehension.",
+      "defaultValue": "70"
+    }
+  ]
+}
