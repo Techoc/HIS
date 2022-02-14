@@ -1,7 +1,7 @@
 package cn.techoc.his;
 
 import cn.techoc.his.utils.BaiDuMapUtils;
-import com.sun.tools.javac.util.List;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
