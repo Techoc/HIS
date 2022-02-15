@@ -27,6 +27,13 @@ public class Hospital {
     private String name;
 
     /**
+     * 医院简介
+     */
+    @ApiModelProperty(value = "医院简介")
+    private String describes;
+
+
+    /**
      * 医院具体位置信息
      */
     @ApiModelProperty(value = "医院具体位置信息")
@@ -55,4 +62,10 @@ public class Hospital {
      */
     @ApiModelProperty(value = "经度")
     private String longitude;
+
+    /**
+     * 是否启用
+     */
+    @ApiModelProperty(value = "是否启用")
+    private int enable;
 }
