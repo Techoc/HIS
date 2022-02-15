@@ -10,6 +10,7 @@ public class HospitalVO {
     private String id;
     private String name;
     private String describes;
+    private String location;
     private String address;
     private String phone;
 
