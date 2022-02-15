@@ -20,7 +20,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.OAS_30)
             .apiInfo(apiInfo())
             .enable(true)
-            .groupName("ZRJ")
+            .groupName("HIS")
             .select()
             .apis(RequestHandlerSelectors.basePackage("cn.techoc.his.controller"))
             .paths(PathSelectors.ant("/**"))
@@ -31,8 +31,8 @@ public class SwaggerConfig {
     @SuppressWarnings("all")
     public ApiInfo apiInfo(){
         return new ApiInfo(
-            "zrj's api",
-            "redis project",
+            "HIS's api",
+            "在线预约与管理系统",
             "v1.0",
             "techoc@foxmail.com", //开发者团队的邮箱
             "techoc", //开发者团队的名称
